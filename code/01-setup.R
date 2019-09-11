@@ -17,7 +17,7 @@ data <- tibble(id = 1:16,
 
 data %>% 
   mutate(date = ymd(20190910) + id - 1) %>% 
-  mutate(allw = 17-id) %>% 
+  mutate(allw = ifelse(id == 1, 15, 17-id)) %>% 
   mutate(dan = wday(date, label = TRUE, locale = "en_GB.utf8")) -> data
 
 ## save

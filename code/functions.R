@@ -36,7 +36,7 @@ FunPlot <- function(df = data) {
   barplot(height = matrix(c(df$zigg, df$drnk), byrow = TRUE,ncol = 16), 
           beside = TRUE, names.arg = df$date, col = c("orange", "blue" ), ylim = c(0,16),
           las = 2, border = c("orange", "blue" ))
-  barplot(height = matrix(c(16:1, rep(1, 16)), byrow = TRUE, ncol = 16), beside = TRUE,
+  barplot(height = matrix(c(df$allw, rep(1, 16)), byrow = TRUE, ncol = 16), beside = TRUE,
           add = TRUE, col = NA, border = c("red", NA), axes = FALSE, lwd = 3)
   dev.off()
 }
