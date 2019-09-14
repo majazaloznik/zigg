@@ -13,8 +13,8 @@ source("code/functions.R")
 ## update with new data  ######################################################
 
 FunNewLine(data, 
-           new.drnk = 0, 
-           new.zigg = 11,
+           new.drnk = 3, 
+           new.zigg = 12,
            overwrite = NULL) -> data
 
 FunPlot(data)
