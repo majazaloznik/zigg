@@ -13,8 +13,8 @@ source("code/functions.R")
 ## update with new data  ######################################################
 
 FunNewLine(data, 
-           new.drnk = 3, 
-           new.zigg = 12,
+           new.drnk = 0, 
+           new.zigg = 10,
            overwrite = NULL) -> data
 
 FunPlot(data)
@@ -23,3 +23,4 @@ FunPlot(data)
 ## save
 
 saveRDS(data, "data/data.rds")
+
