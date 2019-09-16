@@ -34,10 +34,10 @@ FunPlot <- function(df = data) {
   par(mar = c(6, 3, 1, 1))
   
   barplot(height = matrix(c(df$zigg, df$drnk), byrow = TRUE,ncol = 16), 
-          beside = TRUE, names.arg = df$date, col = c("orange", "blue" ), ylim = c(0,16),
-          las = 2, border = c("orange", "blue" ))
+          beside = TRUE, names.arg = df$date, col = c("peachpuff3", "olivedrab3" ), ylim = c(0,16),
+          las = 2, border = c("peachpuff3", "olivedrab3" ))
   barplot(height = matrix(c(df$allw, rep(1, 16)), byrow = TRUE, ncol = 16), beside = TRUE,
-          add = TRUE, col = NA, border = c("red", NA), axes = FALSE, lwd = 3)
+          add = TRUE, col = NA, border = c("red", NA), axes = FALSE)
   dev.off()
 }
 
