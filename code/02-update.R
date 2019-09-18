@@ -14,7 +14,7 @@ source("code/functions.R")
 
 FunNewLine(data, 
            new.drnk = 0, 
-           new.zigg = 10,
+           new.zigg = 9,
            overwrite = NULL) -> data
 
 FunPlot(data)
